@@ -72,7 +72,7 @@ public class RobotAutoDriveTopRight extends LinearOpMode {
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
 
-        robot.rightTurn(0.4, 1000);
+        // robot.rightTurn(0.4, 1000); had a bug here
         robot.stop();
         robot.forward(1, 800);
         robot.stop();
