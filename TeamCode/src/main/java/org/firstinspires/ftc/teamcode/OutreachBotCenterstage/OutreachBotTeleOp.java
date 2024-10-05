@@ -20,8 +20,8 @@ public class OutreachBotTeleOp extends OpMode {
     DcMotor leftViperSlide;
     DcMotor rightViperSlide;
 
-    Servo arm;
-    Servo clawServo;
+    Servo claw;
+    Servo armServo;
 
     @Override
     public void init() {
@@ -33,8 +33,8 @@ public class OutreachBotTeleOp extends OpMode {
         leftViperSlide = hardwareMap.get(DcMotor.class, "left viper slide");
         rightViperSlide = hardwareMap.get(DcMotor.class, "right viper slide");
 
-        arm = hardwareMap.get(Servo.class, "arm");
-        clawServo = hardwareMap.get(Servo.class, "clawServo");
+        claw = hardwareMap.get(Servo.class, "claw");
+        armServo = hardwareMap.get(Servo.class, "armServo");
 
         // if needed change reversals if it is left side
         frontRight.setDirection(DcMotorSimple.Direction.REVERSE);
