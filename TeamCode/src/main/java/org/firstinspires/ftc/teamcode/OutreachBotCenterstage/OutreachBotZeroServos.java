@@ -5,14 +5,14 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 public class OutreachBotZeroServos extends OpMode {
 
-    Servo arm;
-    Servo clawServo;
+    Servo claw;
+    Servo armServo;
 
     @Override
     public void init() {
 
-        arm = hardwareMap.get(Servo.class, "arm");
-        clawServo = hardwareMap.get(Servo.class, "clawServo");
+        arm = hardwareMap.get(Servo.class, "claw");
+        clawServo = hardwareMap.get(Servo.class, "armServo");
 
         arm.setPosition(0);
         clawServo.setPosition(0);
