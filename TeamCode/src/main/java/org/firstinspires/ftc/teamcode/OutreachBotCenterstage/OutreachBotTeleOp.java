@@ -17,8 +17,8 @@ public class OutreachBotTeleOp extends OpMode {
     DcMotor backLeft;
     DcMotor backRight;
 
-    DcMotor leftViperSlide;
-    DcMotor rightViperSlide;
+    //DcMotor leftViperSlide;
+    //DcMotor rightViperSlide;
 
     Servo claw;
     Servo armServo;
