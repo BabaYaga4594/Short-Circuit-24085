@@ -17,9 +17,6 @@ public class OutreachBotTeleOp extends OpMode {
     DcMotor backLeft;
     DcMotor backRight;
 
-    //DcMotor leftViperSlide;
-    //DcMotor rightViperSlide;
-
     Servo claw;
     Servo armServo;
 
@@ -30,8 +27,6 @@ public class OutreachBotTeleOp extends OpMode {
         frontRight = hardwareMap.get(DcMotor.class, "frontRight");
         backLeft = hardwareMap.get(DcMotor.class, "backLeft");
         backRight = hardwareMap.get(DcMotor.class, "backRight");
-        //leftViperSlide = hardwareMap.get(DcMotor.class, "left viper slide");
-        //rightViperSlide = hardwareMap.get(DcMotor.class, "right viper slide");
 
         claw = hardwareMap.get(Servo.class, "claw");
         armServo = hardwareMap.get(Servo.class, "armServo");
@@ -44,8 +39,6 @@ public class OutreachBotTeleOp extends OpMode {
         frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         backRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        //leftViperSlide.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        //rightViperSlide.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
     }
 
@@ -66,22 +59,6 @@ public class OutreachBotTeleOp extends OpMode {
         frontRight.setPower(appliedPowers[1]);
         backLeft.setPower(appliedPowers[2]);
         backRight.setPower(appliedPowers[3]);
-        //leftViperSlide.setPower(0.5);
-        //rightViperSlide.setPower(0.5);
-
-
-        //if (gamepad1.dpad_up) {
-            //leftViperSlide.setTargetPosition(100);
-            //rightViperSlide.setTargetPosition(100);
-            //leftViperSlide.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            //rightViperSlide.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-        //}
-        //else if (gamepad1.dpad_down) {
-            //leftViperSlide.setTargetPosition(-100);
-            //rightViperSlide.setTargetPosition(-100);
-            //leftViperSlide.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            //rightViperSlide.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-        //}
 
         // add arm and claw servo motions here
 
