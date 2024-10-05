@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 
-@TeleOp(name = "OutreachBotTeleOp")
+@TeleOp(name = "OutreachTeleOp")
 public class OutreachBotTeleOp extends OpMode {
 
     double drive, turn, strafe;
