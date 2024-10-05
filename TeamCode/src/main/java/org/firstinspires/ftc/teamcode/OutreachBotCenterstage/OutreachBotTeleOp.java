@@ -66,8 +66,8 @@ public class OutreachBotTeleOp extends OpMode {
         frontRight.setPower(appliedPowers[1]);
         backLeft.setPower(appliedPowers[2]);
         backRight.setPower(appliedPowers[3]);
-        leftViperSlide.setPower(0.5);
-        rightViperSlide.setPower(0.5);
+        //leftViperSlide.setPower(0.5);
+        //rightViperSlide.setPower(0.5);
 
 
         //if (gamepad1.dpad_up) {
