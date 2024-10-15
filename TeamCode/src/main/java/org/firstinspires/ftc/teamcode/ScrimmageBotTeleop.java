@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.CRServo;
 
-@TeleOp(name = "OutreachBotFullCode")
+@TeleOp(name = "ScrimmageBot")
 public class FullCode extends OpMode {
    double drive, turn, strafe, servoPosition;
    double flpower, frpower, blpower, brpower;
