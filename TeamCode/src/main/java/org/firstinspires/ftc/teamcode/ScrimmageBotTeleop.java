@@ -16,6 +16,7 @@ public class FullCode extends OpMode {
    DcMotor backLeft;
    DcMotor backRight;
    DcMotor armSlide;
+   DcMotor armMotor;
    CRServo intakeServo;
    Servo sideToSideServo;
 
