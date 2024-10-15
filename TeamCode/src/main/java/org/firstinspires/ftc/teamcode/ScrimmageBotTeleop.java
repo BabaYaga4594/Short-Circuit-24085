@@ -38,6 +38,7 @@ public class FullCode extends OpMode {
        backRight.setDirection(DcMotorSimple.Direction.REVERSE);
        armSlide.setDirection(DcMotorSimple.Direction.FORWARD);
        sideToSideservo.setDirection(Servo.Direction.FORWARD);
+       armMotor.setDirection(DcMotorSimple.Direction.FORWARD);
 
        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
@@ -67,13 +68,23 @@ public class FullCode extends OpMode {
 
        //arm slide
 
-       if (gamepad1.dpad_up) {
+       if (gamepad2.dpad_up) {
            armSlide.setTargetPosition(100);
            armSlide.setMode(DcMotor.RunMode.RUN_TO_POSITION);
        }
-       else if (gamepad1.dpad_down) {
+       else if (gamepad2.dpad_down) {
            armSlide.setTargetPosition(-100);
            armSlide.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+       }
+
+      //arm motor
+      if (gamepad1.dpad_up) {
+           armMotor.setTargetPosition(100);
+           armMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+       }
+       else if (gamepad1.dpad_down) {
+           armMotor.setTargetPosition(-100);
+           armMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
        }
 
        //side to side motor
